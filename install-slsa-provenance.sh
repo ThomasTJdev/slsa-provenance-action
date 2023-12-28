@@ -22,7 +22,7 @@ INSTALL_PATH=${INSTALL_PATH:-$(realpath ./.slsa-provenance)}
 mkdir -p "${INSTALL_PATH}"
 
 VERSION=v0.9.0
-RELEASE="https://github.com/philips-labs/slsa-provenance-action/releases/download/${VERSION}"
+RELEASE="https://github.com/ThomasTJdev/slsa-provenance-action/releases/download/${VERSION}"
 
 if [[ "$VERSION" == *-draft ]] ; then
   curl_args=(-H "Authorization: token $GITHUB_TOKEN")
